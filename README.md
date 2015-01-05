@@ -3,10 +3,13 @@
 
 ## Usage
 
-### Call a prompt and wait for it answer
+### Call a prompt and wait for its answers
 
 ```js
-Prompt({ /* question... */ }).done(function (answers) {
+prompt({ /* question... */ }).done(function (answers) {
   //Do your thing with the answers
 });
 ```
+
+### Chaining prompts
+

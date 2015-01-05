@@ -1,0 +1,30 @@
+{
+  "name": "prompt-flow",
+  "version": "0.0.0",
+  "description": "A prompt flow manage",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Nytramr/prompt-flow.git"
+  },
+  "keywords": [
+    "yo",
+    "yeoman",
+    "inquirer",
+    "prompt"
+  ],
+  "author": "Martin Rubinsztein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nytramr/prompt-flow/issues"
+  },
+  "homepage": "https://github.com/Nytramr/prompt-flow",
+  "dependencies": {
+    "inquirer": "^0.8.0",
+    "merge": "^1.2.0"
+  }
+}
