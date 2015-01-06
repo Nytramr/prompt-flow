@@ -25,6 +25,7 @@
   "homepage": "https://github.com/Nytramr/prompt-flow",
   "dependencies": {
     "inquirer": "^0.8.0",
-    "merge": "^1.2.0"
+    "merge": "^1.2.0",
+    "deep-extend": "^0.3.2"
   }
 }

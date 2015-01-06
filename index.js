@@ -1,23 +1,26 @@
-var promptFlow = require('./lib/promptWrapper');
+var promptFlow = require('./lib/prompt-wrapper');
 
 var prompts1 = [
   {
     type: "input",
     name: "first_name",
     message: "What's your first name"
-  },
-  {
+  },{
     type: "input",
     name: "last_name",
     message: "What's your last name"
+  },{
+    type: "input",
+    name: "age[]",
+    message: "How old were you"
   }
 ];
 
 var prompts2 = [
   {
     type: "input",
-    name: "age",
-    message: "How old were you"
+    name: "age[]",
+    message: "Realy, How old were you"
   }
 ];
 
@@ -36,7 +39,9 @@ var prompts3 = [
 ];
 
 promptFlow.prompt(prompts1)
-.next(prompts2)
+.next(function(ans){
+  return prompts2
+})
 .done(function(ans){
   console.log(ans);
 });
