@@ -19,6 +19,10 @@ var prompts1 = [
 var prompts2 = [
   {
     type: "input",
+    name: "first_name",
+    message: "What's your first name"
+  },{
+    type: "input",
     name: "age[]",
     message: "Realy, How old were you"
   }
@@ -44,4 +48,11 @@ promptFlow.prompt(prompts1)
 })
 .done(function(ans){
   console.log(ans);
+  promptFlow.prompt(prompts1)
+.next(function(ans){
+  return prompts2
+})
+.done(function(ans){
+  console.log(ans);
+});
 });
